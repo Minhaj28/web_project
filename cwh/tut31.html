@@ -6,7 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>more on selector</title>
 </head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* div>p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    } */
+    div + p{
+        color: white;
+        background-color: rgb(156, 70, 70);
+        font-weight: bold;
+    }
+</style>
 <body>
-    
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>this is a li paragraph </p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
 </body>
 </html>
