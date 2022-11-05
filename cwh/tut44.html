@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            'navbar navbar navbar  navbar navbar'
+            'aside section section section section'
+            'footer footer footer footer footer';
+            
+        }
+        .box{
+            background-color: rgb(220, 189, 238);
+            border: 3px solid black;
+
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            navber
+        </div>
+        <div id="section" class="box">
+            section <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </div>
+        <div id="aside" class="box">
+            aside<br>
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+                <li>item-6</li>
+                <li>item-7</li>
+                <li>item-8</li>
+                <li>item-9</li>
+                <li>item-10</li>
+            </ul>
+        </div>
+        <footer class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deleniti repellat quisquam minima earum aspernatur optio veritatis expedita nesciunt at. Blanditiis sequi tempora eius dolores ipsum, unde iure ad quasi eaque, quae molestias, magnam est ipsam ex iusto repellendus aut.</footer>
+        
+    </div>
+</body>
+</html>

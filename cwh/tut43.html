@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid autofit</title>
+    <style>
+        .container{
+            display: grid;
+            /* justify-content: center; */
+            /* grid-template-columns: 112px 112px 112px 112px; */
+            grid-gap: 1rem;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+
+        }
+        .box{
+            background-color: rgb(220, 189, 238);
+            border: 2px solid black;
+            padding: 23px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+        <div class="box">This is box-13</div>
+        <div class="box">This is box-14</div>
+        <div class="box">This is box-15</div>
+        <div class="box">This is box-16</div>
+    </div>
+</body>
+</html>
